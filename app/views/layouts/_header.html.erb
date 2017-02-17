@@ -1,15 +1,24 @@
-<nav>
-  <div class="nav-wrapper  blue lighten-2 z-depth-5">
-    <a href="#" class="brand-logo">BuddyTech</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li>
-          <%= link_to "Home", dashboard_index_url %>
-      </li>
-      <li> <%= link_to "About", contact_dashboard_index_path %></li>
-      <li> <%= link_to "Contact", contact_dashboard_index_path %></li>
-    </ul>
-  </div>
-</nav>
+<div data-role="header">
+  <nav>
+    <div class="nav-wrapper blue lighten-2 z-depth-5">
+      <a href="#!" class="brand-logo">BuddyTech</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><%= link_to "Home", dashboard_index_url %></li>
+        <li><%= link_to "About", contact_dashboard_index_path %></li>
+        <li><%= link_to "Contact", contact_dashboard_index_path %></li> 
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><div class="userView">
+          <a href="#!user"><img class="circle logo_design" src="/assets/Demo1.png"></a>
+        </div></li>
+        <li><%= link_to "Home", dashboard_index_url %></li>
+        <li><%= link_to "About", contact_dashboard_index_path %></li>
+        <li><%= link_to "Contact", contact_dashboard_index_path %></li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
 <div class="parallax-container">
   <div class="parallax"><img src="http://bonefidewealth.com/wp-content/uploads/2016/11/freelancer.png"></div>
@@ -47,10 +56,16 @@
     
   $(document).ready(function(){
     $('.parallax').parallax();
+    $(".button-collapse").sideNav();
   });
 </script>
 <style>
  .parallax-container {
     height: 200px;
+  }
+  .logo_design{
+    height: 80px!important;
+    width: 220px!important;
+    border-radius: 35%!important;
   }
 </style>
