@@ -1,22 +1,39 @@
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
-}
+.parallax, .parallax2 {
+  /* The image used */
+  background-image: url("/assets/freelancer.png");
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2{
+  background-image: url("/assets/freelancer1.png");
+}
+.parallax3{
+  background-image: url("/assets/footer1.jpeg");
+}
+.body_design{
+  background-color: #FF8800;
+  color: white;
+}
+.nav_bar_style{
+  color: white;
+}
+.brand_name{
+  color: white;
+  font-size: 38px;
+  font-family: initial;
+}
+.link_style{
+  color:white;
+  font-size: 20px;
+  font-family: initial;
+}
+.icon_color{
+  background-color: white;
 }
